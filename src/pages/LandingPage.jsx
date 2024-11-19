@@ -43,9 +43,14 @@ export default function LandingPage() {
           </p>
           {/* Button under the paragraph */}
           <div className="flex justify-center mt-6">
-            <button className="px-6 py-3 text-white bg-[#002244] rounded-lg hover:bg-blue-600 focus:outline-none transition-colors duration-300">
+            <a
+              href="https://api.whatsapp.com/send?phone=6281511001239&text=Halo%2C%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20GCG%20Salus"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 text-white bg-[#002244] rounded-lg hover:bg-blue-600 focus:outline-none transition-colors duration-300"
+            >
               Konsultasikan
-            </button>
+            </a>
           </div>
         </div>
 
@@ -85,6 +90,18 @@ export default function LandingPage() {
             fokus pada efisiensi dan kualitas, GCG Salus membawa teknologi
             kesehatan ke tingkat yang lebih baik.
           </p>
+
+          {/* Consult Button */}
+          <div className="flex justify-center mt-6">
+            <a
+              href="https://api.whatsapp.com/send?phone=6281511001239&text=Halo%2C%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20GCG%20Salus"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 text-white border-2 border-white rounded-lg hover:bg-blue-600 focus:outline-none transition-colors duration-300"
+            >
+              Konsultasikan
+            </a>
+          </div>
         </section>
       </div>
 
@@ -179,6 +196,18 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Consult Button */}
+        <div className="flex justify-center mt-6">
+          <a
+            href="https://api.whatsapp.com/send?phone=6281511001239&text=Halo%2C%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20GCG%20Salus"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 text-white bg-[#002244] rounded-lg hover:bg-blue-600 focus:outline-none transition-colors duration-300"
+          >
+            Konsultasikan
+          </a>
         </div>
       </section>
 
@@ -281,6 +310,17 @@ export default function LandingPage() {
                 pengaturan lainnya.
               </p>
             </div>
+          </div>
+          {/* Consultation Button */}
+          <div className="flex justify-center mt-6">
+            <a
+              href="https://api.whatsapp.com/send?phone=6281511001239&text=Halo%2C%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20GCG%20Salus"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 text-white border-2 border-white rounded-lg hover:bg-blue-600 focus:outline-none transition-colors duration-300"
+            >
+              Konsultasikan
+            </a>
           </div>
         </section>
       </div>
