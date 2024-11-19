@@ -68,7 +68,7 @@ const Footer = () => (
         <div>
           <h2 className="text-xl font-semibold text-white">Contact Us</h2>
           <a
-            href="https://api.whatsapp.com/send?phone=6281511001239"
+            href="https://api.whatsapp.com/send?phone=6281511001239&text=Halo%2C%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20GCG%20Salus"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -80,7 +80,7 @@ const Footer = () => (
             </div>
           </a>
           <a
-            href="https://api.whatsapp.com/send?phone=622138741038&text=Halo, saya ingin mengetahui lebih lanjut tentang GCG Salus"
+            href="https://api.whatsapp.com/send?phone=622138741038&text=Halo%2C%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20GCG%20Salus"
             target="_blank"
             rel="noopener noreferrer"
           >
