@@ -124,7 +124,7 @@ const Footer = () => {
         {/* Row 2 */}
         <div className="py-3 mt-4 text-sm text-center text-gray-400 border-t border-gray-700">
           &copy; {new Date().getFullYear()} Gema Cendekia Gemilang. All rights
-          reserved. Created by Arief Taufik Rahman.
+          reserved.
         </div>
       </div>
     </footer>
