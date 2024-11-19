@@ -14,13 +14,13 @@ const Header = () => {
 
         {/* Desktop Navigation Links */}
         <div className="hidden md:flex items-center space-x-8 text-blue-950">
-          <a href="#overview" className="hover:text-blue-500">
+          <a href="#fitur" className="hover:text-blue-500">
             Fitur
           </a>
-          <a href="#vision" className="hover:text-blue-500">
+          <a href="#kontak" className="hover:text-blue-500">
             Kontak
           </a>
-          <a href="#about" className="hover:text-blue-500">
+          <a href="#faq" className="hover:text-blue-500">
             FAQ
           </a>
           <a

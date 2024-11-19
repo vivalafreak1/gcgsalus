@@ -80,7 +80,7 @@ const Footer = () => (
             </div>
           </a>
           <a
-            href="https://api.whatsapp.com/send?phone=622138741038"
+            href="https://api.whatsapp.com/send?phone=622138741038&text=Halo, saya ingin mengetahui lebih lanjut tentang GCG Salus"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -112,8 +112,8 @@ const Footer = () => (
                 <FaMapMarkerAlt className="text-gray-800" />
               </span>
               <p>
-                Graha Cibinong Blok H No. 08, JL. Raya Jakarta - Bogor Km 43,
-                Kab. Bogor, Jawa Barat 16917
+                Graha Cibinong . JL. Raya Jakarta - Bogor Km 43 Blok H No. 08,
+                Cirimekar, Kec. Cibinong, Kab. Bogor, Jawa Barat 16917
               </p>
             </div>
           </a>
