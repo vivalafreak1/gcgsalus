@@ -1,14 +1,24 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate(); // Initialize navigate hook
+
+  // Function to handle logo click
+  const handleLogoClick = () => {
+    navigate("/"); // Navigate to the home page
+  };
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full bg-white shadow-md">
       <nav className="flex items-center justify-between p-4 mx-auto max-w-screen-2xl">
         {/* Logo */}
-        <div className="flex items-center">
+        <div
+          className="flex items-center cursor-pointer"
+          onClick={handleLogoClick}
+        >
           <img src={logo} alt="Logo" className="h-10" />
         </div>
 
@@ -24,7 +34,7 @@ const Header = () => {
             FAQ
           </a>
           <a
-            href="#clients"
+            href="https://api.whatsapp.com/send?phone=6281511001239&text=Halo%2C%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20GCG%20Salus"
             className="px-4 py-2 font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600 hover:shadow-md transition-transform transform hover:scale-105"
           >
             Daftar
@@ -64,28 +74,28 @@ const Header = () => {
         <div className="bg-white shadow-lg md:hidden">
           <div className="px-4 py-4 space-y-4 text-blue-950">
             <a
-              href="#overview"
+              href="#fitur"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block hover:text-blue-500"
             >
-              Overview
+              Fitur
             </a>
             <a
-              href="#vision"
+              href="#kontak"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block hover:text-blue-500"
             >
-              Vision
+              Kontak
             </a>
             <a
-              href="#about"
+              href="#faq"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block hover:text-blue-500"
             >
-              About
+              FAQ
             </a>
             <a
-              href="#clients"
+              href="https://api.whatsapp.com/send?phone=6281511001239&text=Halo%2C%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20GCG%20Salus"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block px-4 py-2 font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600 hover:shadow-md transition-transform transform hover:scale-105"
             >
