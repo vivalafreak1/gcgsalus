@@ -15,3 +15,12 @@ Currently, two official plugins are available:
 - Type `npm i`
 - Type `npm run dev`
 - if you want to build, `npm run build`, the project will create `dist` folder, copy the dist into your hosted server 
+
+
+# Environment Variables
+
+```
+VITE_EMAILJS_SERVICE_ID
+VITE_EMAILJS_TEMPLATE_ID
+VITE_EMAILJS_PUBLIC_KEY
+```
