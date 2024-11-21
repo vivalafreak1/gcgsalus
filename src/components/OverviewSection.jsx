@@ -3,10 +3,7 @@ import intro from "../assets/intro.png";
 
 const OverviewSection = () => {
   return (
-    <section
-      id="overview"
-      className="flex flex-col items-center justify-center min-h-screen p-8 bg-center bg-cover md:flex-row pt-24"
-    >
+    <section className="flex flex-col items-center justify-center min-h-screen p-8 pt-24 bg-center bg-cover md:flex-row">
       {/* Text Column */}
       <div className="w-full max-w-screen-sm mb-8 text-center md:text-left md:w-1/2 md:mb-0">
         <h2 className="mb-4 text-4xl font-bold text-blue-950 md:text-5xl">
@@ -33,7 +30,7 @@ const OverviewSection = () => {
       </div>
 
       {/* Image Column */}
-      <div className="w-full md:w-1/2 flex items-center justify-center">
+      <div className="flex items-center justify-center w-full md:w-1/2">
         <img src={intro} alt="Overview" className="w-full max-w-2xl" />
       </div>
     </section>

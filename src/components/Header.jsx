@@ -2,13 +2,24 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 
+const NAV_LINKS = [
+  { href: "#tentang", label: "Tentang" },
+  { href: "#keunggulan", label: "Keunggulan" },
+  { href: "#fitur", label: "Fitur" },
+  { href: "#kontak", label: "Kontak" },
+];
+
+const WHATSAPP_LINK = {
+  href: "https://api.whatsapp.com/send?phone=6281511001239&text=Halo%2C%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20GCG%20Salus",
+  label: "Daftar",
+};
+
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const navigate = useNavigate(); // Initialize navigate hook
+  const navigate = useNavigate();
 
-  // Function to handle logo click
   const handleLogoClick = () => {
-    navigate("/"); // Navigate to the home page
+    navigate("/");
   };
 
   return (
@@ -23,21 +34,17 @@ const Header = () => {
         </div>
 
         {/* Desktop Navigation Links */}
-        <div className="hidden md:flex items-center space-x-8 text-blue-950">
-          <a href="#fitur" className="hover:text-blue-500">
-            Fitur
-          </a>
-          <a href="#kontak" className="hover:text-blue-500">
-            Kontak
-          </a>
-          <a href="#faq" className="hover:text-blue-500">
-            FAQ
-          </a>
+        <div className="items-center hidden space-x-8 md:flex text-blue-950">
+          {NAV_LINKS.map(({ href, label }) => (
+            <a key={href} href={href} className="hover:text-blue-500">
+              {label}
+            </a>
+          ))}
           <a
-            href="https://api.whatsapp.com/send?phone=6281511001239&text=Halo%2C%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20GCG%20Salus"
-            className="px-4 py-2 font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600 hover:shadow-md transition-transform transform hover:scale-105"
+            href={WHATSAPP_LINK.href}
+            className="px-4 py-2 font-semibold text-white transition-transform transform bg-blue-500 rounded-lg hover:bg-blue-600 hover:shadow-md hover:scale-105"
           >
-            Daftar
+            {WHATSAPP_LINK.label}
           </a>
         </div>
 
@@ -73,33 +80,22 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div className="bg-white shadow-lg md:hidden">
           <div className="px-4 py-4 space-y-4 text-blue-950">
+            {NAV_LINKS.map(({ href, label }) => (
+              <a
+                key={href}
+                href={href}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block hover:text-blue-500"
+              >
+                {label}
+              </a>
+            ))}
             <a
-              href="#fitur"
+              href={WHATSAPP_LINK.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block hover:text-blue-500"
+              className="block px-4 py-2 font-semibold text-white transition-transform transform bg-blue-500 rounded-lg hover:bg-blue-600 hover:shadow-md hover:scale-105"
             >
-              Fitur
-            </a>
-            <a
-              href="#kontak"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block hover:text-blue-500"
-            >
-              Kontak
-            </a>
-            <a
-              href="#faq"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block hover:text-blue-500"
-            >
-              FAQ
-            </a>
-            <a
-              href="https://api.whatsapp.com/send?phone=6281511001239&text=Halo%2C%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20GCG%20Salus"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block px-4 py-2 font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600 hover:shadow-md transition-transform transform hover:scale-105"
-            >
-              Daftar
+              {WHATSAPP_LINK.label}
             </a>
           </div>
         </div>

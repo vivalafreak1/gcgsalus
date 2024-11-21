@@ -1,10 +1,10 @@
 import React from "react";
 import sehatLogo from "../assets/satusehat-logo.png";
-import satusehat from "../assets/satusehat.svg";
+import satusehat from "../assets/satusehat.png";
 
 const IntegrationSection = () => {
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen p-8 bg-center bg-cover md:flex-row pt-24">
+    <section className="flex flex-col items-center justify-center min-h-screen p-8 pt-24 bg-center bg-cover md:flex-row">
       {/* Text Column */}
       <div className="w-full max-w-screen-sm mb-8 text-center md:text-left md:w-1/2 md:mb-0">
         {/* Logo with optimized width and center alignment */}
@@ -38,7 +38,7 @@ const IntegrationSection = () => {
       </div>
 
       {/* Image Column */}
-      <div className="w-full md:w-1/2 flex items-center justify-center">
+      <div className="flex items-center justify-center w-full md:w-1/2">
         <img src={satusehat} alt="Overview" className="w-full max-w-2xl" />
       </div>
     </section>

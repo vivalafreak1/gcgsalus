@@ -4,6 +4,7 @@ import hospital from "../assets/hospital.png";
 const VisionSection = () => {
   return (
     <div
+      id="tentang"
       className="relative bg-[#002244]"
       style={{
         backgroundImage: `url(${hospital})`,
@@ -16,16 +17,16 @@ const VisionSection = () => {
 
       <section
         id="vision"
-        className="flex flex-col items-center justify-center min-h-screen p-8 mx-auto max-w-screen-lg relative z-10"
+        className="relative z-10 flex flex-col items-center justify-center max-w-screen-lg min-h-screen p-8 mx-auto"
       >
         {/* Header with GCG and Salus */}
-        <h1 className="mb-8 text-5xl sm:text-6xl md:text-7xl font-bold">
+        <h1 className="mb-8 text-5xl font-bold sm:text-6xl md:text-7xl">
           <span className="text-[#259DC5]">GCG</span>
           <span className="text-white"> Salus</span>
         </h1>
 
         {/* Paragraph */}
-        <p className="mb-10 text-lg sm:text-xl md:text-2xl text-center text-white">
+        <p className="mb-10 text-lg text-center text-white sm:text-xl md:text-2xl">
           Solusi inovatif untuk mengelola Sistem Informasi Manajemen Fasilitas
           Kesehatan, menyederhanakan proses kompleks di Rumah Sakit dan Klinik,
           serta meningkatkan kualitas pelayanan secara optimal. Dengan fokus
@@ -39,7 +40,7 @@ const VisionSection = () => {
             href="https://api.whatsapp.com/send?phone=6281511001239&text=Halo%2C%20saya%20ingin%20mengetahui%20lebih%20lanjut%20tentang%20GCG%20Salus"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 text-white border-2 border-white rounded-lg hover:bg-blue-600 focus:outline-none transition-colors duration-300"
+            className="px-6 py-3 text-white transition-colors duration-300 border-2 border-white rounded-lg hover:bg-blue-600 focus:outline-none"
           >
             Konsultasikan
           </a>
