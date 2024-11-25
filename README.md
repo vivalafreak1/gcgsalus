@@ -25,5 +25,4 @@ VITE_EMAILJS_TEMPLATE_ID
 VITE_EMAILJS_PUBLIC_KEY
 ```
 
-
-test
+.env is for activate the emailjs, the contact email functionality.
