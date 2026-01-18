@@ -30,4 +30,3 @@ VITE_EMAILJS_PUBLIC_KEY
 22aawdawdawawdwadwadwa
 awdwadwawa
 a222
-dfgdfgdfgdfgdf
