@@ -16,7 +16,7 @@ test
 - Type `npm run dev`
 - if you want to build, `npm run build`, the project will create `dist` folder, copy the dist into your hosted server 
 
-
+Bis
 # Environment Variables
 
 ```
