@@ -27,3 +27,4 @@ VITE_EMAILJS_PUBLIC_KEY
 Rr
 .env is for activate the emailjs, the contact email functionality
 3333
+awa
