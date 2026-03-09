@@ -28,4 +28,3 @@ VITE_EMAILJS_PUBLIC_KEY
 33
 awdwada
 awdwadwa
-awwa
