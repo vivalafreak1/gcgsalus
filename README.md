@@ -28,5 +28,5 @@ VITE_EMAILJS_PUBLIC_KEY
 aqwdwadwadwa
 221212
 wwww2wwadawdwadwadwadwa
-awdwadwadwa
+awdwadawdwa
 12312312312312312
