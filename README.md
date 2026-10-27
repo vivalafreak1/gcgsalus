@@ -28,5 +28,5 @@ VITE_EMAILJS_PUBLIC_KEY
 awdwadwadwadwa
 adwdwadw
 2
-222212312312
+222
 12321312
