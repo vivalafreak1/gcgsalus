@@ -27,7 +27,7 @@ VITE_EMAILJS_PUBLIC_KEY
 .env is for activate the emailjs, the contact email functionality
 awdwadwadwadwa
 12312312312312
-12312321312
+asdawdwadwa
 222
 333
 3333
